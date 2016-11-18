@@ -3,16 +3,16 @@ html {
 }
 
 .masthead {
-  background-image: url("../images/leaf-bg.svg");
-  background-repeat: repeat;
   background-color: #588477;
+  background-image: url("../images/leaf-bg.svg");
+  background-size: 64px auto;
   border-top: 3px solid #2d5a4d;
   border-bottom: 3px solid #2d5a4d;
-  color: #fff;
 }
 
 .logo {
   text-align: center;
+  color: #fff;
 }
 
 .nav {
@@ -22,33 +22,36 @@ html {
 .nav a {
   text-decoration: none;
   color: #fff;
-  border: 3px solid #2d5a4d;
   background-color: #467366;
   border-radius: 8px;
+  border: 3px solid #2d5a4d;
 }
 
 .nav a:hover {
-  background-color: #fff;
-  color: #145b1d;
   background-image: url("../images/leaf-icon.svg");
-  background-size: contain;
+  background-color: #fff;
+  background-position: center;
+  color: #145b1d;
+  background-size: 64px;
   background-repeat: no-repeat;
 }
 
 .banner {
-  border-bottom: 3px solid #145b1d;
-  background-image: linear-gradient(to bottom, transparent, rgba(16, 52, 41, 0) rgba(16, 51, 41, .8) url("../images/leaf-background.jpg");
-  background-size: 1440px auto;
-  background-position: bottom;
-  max-height;
+  background:
+    linear-gradient(to top, rgba(16, 52, 41, .8), rgba(16, 52, 41, 0) 50%),
+    url("../images/banner.jpg") no-repeat center bottom/ cover
+    #588477;
+  border-bottom: 3px solid #2d5a4d;
+  color: #fff;
 }
 
 .banner-content {
   background-image: url("../images/two-leaves.svg");
-  padding-top: 39em;
   background-repeat: no-repeat;
-  background-size: 100px auto;
-  background-position: left;
+  background-size: 90px;
+  color: #fff;
+  background-position: 1em 10em;
+  padding-top: 300px;
 }
 
 @media only screen and (min-width: 60em) {
